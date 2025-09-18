@@ -20,6 +20,7 @@ public class User implements UserDetails {
     private String email;
     private String password;
 
+    //@ManyToMany(fetch = FetchType.EAGER) //nao é uma boa pratica
     @ManyToMany
     @JoinTable(name = "tb_user_role",
             joinColumns = @JoinColumn(name = "user_id"),
