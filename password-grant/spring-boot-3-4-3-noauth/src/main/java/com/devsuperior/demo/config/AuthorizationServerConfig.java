@@ -88,7 +88,7 @@ public class AuthorizationServerConfig {
 
 	@Bean
 	public OAuth2AuthorizationService authorizationService() {
-		return new InMemoryOAuth2AuthorizationService();
+        return new InMemoryOAuth2AuthorizationService();
 	}
 
 	@Bean
@@ -98,7 +98,7 @@ public class AuthorizationServerConfig {
 
 	@Bean
 	public PasswordEncoder passwordEncoder() {
-		return new BCryptPasswordEncoder();
+        return new BCryptPasswordEncoder();
 	}
 
 	@Bean
